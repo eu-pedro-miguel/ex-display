@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d41c4332fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#title1" id="nav-title1"></a>
+            <a href="#title2" id="nav-title2"></a>
+            <a href="#title3" id="nav-title3"></a>
+        </nav>
+    </header>
+    <div class="carousel">
+        <div class="group">
+            <div class="card"><img src="img/re0.png" alt=""></div>
+            <div class="card"><img src="img/re1.png" alt=""></div>
+            <div class="card"><img src="img/re2.png" alt=""></div>
+            <div class="card"><img src="img/re3.png" alt=""></div>
+            <div class="card"><img src="img/re4.png" alt=""></div>
+            <div class="card"><img src="img/re5.png" alt=""></div>
+            <div class="card"><img src="img/re6.png" alt=""></div>
+            <div class="card"><img src="img/re7.png" alt=""></div>
+            <div class="card"><img src="img/re8.png" alt=""></div>
+            <div class="card"><img src="img/re9.png" alt=""></div>
+        </div>
+        <div class="group">
+            <div class="card"><img src="img/re0.png" alt=""></div>
+            <div class="card"><img src="img/re1.png" alt=""></div>
+            <div class="card"><img src="img/re2.png" alt=""></div>
+            <div class="card"><img src="img/re3.png" alt=""></div>
+            <div class="card"><img src="img/re4.png" alt=""></div>
+            <div class="card"><img src="img/re5.png" alt=""></div>
+            <div class="card"><img src="img/re6.png" alt=""></div>
+            <div class="card"><img src="img/re7.png" alt=""></div>
+            <div class="card"><img src="img/re8.png" alt=""></div>
+            <div class="card"><img src="img/re9.png" alt=""></div>
+        </div>
+    </div>
+    <div class="caixa">
+        <section>
+            <div class="article"> 
+                <h1 id="title1">Título 01</h1>
+                <p>
+                    
+                </p>
+            </div>
+            <div class="article">
+                <h1 id="title2">Título 02</h1>
+                <p>
+                    
+                </p>
+            </div>
+            <div class="article">
+                <h1 id="title3">Título 03</h1> 
+                <p>
+                    
+                </p>
+            </div>
+        </section>
+    </div>
+    <div id="red">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorem quos totam enim unde veniam ipsum repudiandae numquam.
+            In nisi veritatis possimus saepe autem quasi cupiditate accusantium, consequuntur earum optio.
+        </p>
+        <div id="green">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis nesciunt dicta inventore, a in,
+                voluptatem quis facere fugit praesentium iusto vero dolorum, ratione vel amet aut ab voluptate. Vel.
+            </p>
+            <div id="red">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi provident suscipit quos,
+                    impedit officia ex nostrum asperiores aperiam mollitia debitis est laboriosam! Minus aliquam corporis distinctio sapiente, debitis accusamus.
+                </p>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn" id="btn-cor" onclick="cor()">Alterar Cor</button>
+    <button type="button" class="btn" id="btn-editar" onclick="chamar_modal()">Editar</button>
+    <form action="">
+        <div id="modal" class="modal">
+            <div class="modal-conteudo">
+                <button type="button" class="fechar" onclick="fecharModal()" disabled><i class="fa-solid fa-x"></i></button>
+                <h2>Bem-vindo</h2>
+                <br>
+                <div class="opcao">
+                    <input type="radio" name="jogo" id="rf" value="rf">
+                    <label for="rf">Remothered Tormented Fathers</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="jogo" id="rb" value="rb">
+                    <label for="rb">Remothered Broken Porcelain</label>
+                </div>
+                <button type="button" class="enviar" onclick="imagem()">Enviar</button>
+                <br>
+                <p id="aviso">
+                    *Selecione uma das opções acima
+                </p>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

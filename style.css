@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: normal normal 1rem Tahoma, 'Segoe UI', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#navbar {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    border-bottom: solid .15rem #efefef;
+    align-items: center;
+    justify-content: space-evenly;
+    scroll-target-group: auto;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    transition: ease 0.2s;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    color: #c7c7c7;
+}
+
+#navbar a:target-current {
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+    text-decoration-color: #1ee;
+}
+
+body {
+    background-color: #efefef;
+    transition: ease 0.2s;
+}
+
+.btn {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 0.4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    cursor: pointer;
+    border: 0;
+    border-radius: .3em;
+}
+
+.btn:hover {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.btn:active {
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 1.5em;
+    font-weight: bold;
+}
+
+.article {
+    border-radius: .3em;
+    corner-shape: notch;
+    background-color: #d0d0d0d5;
+    margin: .2em;
+    margin-inline: 1em;
+    box-shadow: 0 1px 2px black;
+}
+
+.article p {
+    margin: 3em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #00000080;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    width: 80vw;
+    max-width: 800px;
+    height: 60vh;
+    max-height: 700px;
+    background: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza tudo horizontalmente */
+    position: relative;
+    overflow: auto;
+}
+
+button {
+    transition: filter 0.3s ease-out;
+}
+
+.enviar {
+    cursor: pointer;
+    color: white;
+    background-color: #11b10e;
+    border-radius: 3px;
+    border: none;
+    padding: .1em;
+}
+
+.fechar {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: #ff0000;
+    border-radius: 3px;
+    border: none;
+}
+
+.fechar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+h2 {
+    color: #5e5e5e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.modal-conteudo p {
+    color: #2e53e5;
+}
+
+.opcao {
+    display: flex;
+    border-bottom: 1px solid #00000037;
+    padding: .2em;
+    margin-bottom: .3em;
+    align-items: center;
+    gap: .3rem;
+}
+
+#aviso {
+    display: none;
+}
+
+#imagem-escolhida {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: .5em;
+}
+
+.carousel {
+    margin: 10em auto;
+    width: 100%;
+    height: 15vh;
+    background-color: #e5251422;
+    border: .1em solid #6494ed11;
+    box-shadow: 
+        0 0 20px #ef4e3233, 
+        0 0 60px #ff030373;
+    border-inline: none;
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    animation: spin 15s infinite linear;
+    padding-right: 4em;
+}
+
+.card {
+    flex: 0 0 12em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2em;
+    font-size: 1.5rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+.card img {
+    height: 100%;
+    width: auto;
+    object-fit: contain; /* nunca corta */
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+.carousel:hover .group {
+    animation-play-state: paused; 
+}
+
+@scope (#red) {
+
+    :scope {
+        background-color: #5c0808;
+    }
+    p {
+        color: white;
+    }
+}
+
+@scope (#green) {
+
+    :scope {
+        background-color: #39ce13;
+    }
+    p {
+        color: #4f0ceb;
+    }
+}
